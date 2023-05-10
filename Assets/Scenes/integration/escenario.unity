@@ -656,7 +656,7 @@ PrefabInstance:
     - target: {fileID: 8531981430910139893, guid: 2a8ef5ad875436d4c9d5acd056d152f6,
         type: 3}
       propertyPath: m_Name
-      value: interactuable-2 (1)
+      value: interactuable-2 (1)-OK
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -680,7 +680,7 @@ PrefabInstance:
     - target: {fileID: 2616791182174085107, guid: df7d0cd3e6cf2a647aac1c55fd2ea5c9,
         type: 3}
       propertyPath: m_Name
-      value: interactuable-4 (1)
+      value: interactuable-4 (1)-null
       objectReference: {fileID: 0}
     - target: {fileID: 3585433029657638847, guid: df7d0cd3e6cf2a647aac1c55fd2ea5c9,
         type: 3}
@@ -927,7 +927,7 @@ PrefabInstance:
     - target: {fileID: 2616791182174085107, guid: df7d0cd3e6cf2a647aac1c55fd2ea5c9,
         type: 3}
       propertyPath: m_Name
-      value: interactuable-4
+      value: interactuable-4-OK
       objectReference: {fileID: 0}
     - target: {fileID: 3585433029657638847, guid: df7d0cd3e6cf2a647aac1c55fd2ea5c9,
         type: 3}
@@ -3085,7 +3085,7 @@ PrefabInstance:
     - target: {fileID: 6297973007661569580, guid: 335079befed9c13409db5f8916040f25,
         type: 3}
       propertyPath: m_Name
-      value: Interactuable-1 (1)
+      value: Interactuable-1 (1)-null
       objectReference: {fileID: 0}
     - target: {fileID: 7480777726049967478, guid: 335079befed9c13409db5f8916040f25,
         type: 3}
@@ -3164,7 +3164,7 @@ PrefabInstance:
     - target: {fileID: 6297973007661569580, guid: 335079befed9c13409db5f8916040f25,
         type: 3}
       propertyPath: m_Name
-      value: Interactuable-1 (2)
+      value: Interactuable-1 (2)-null
       objectReference: {fileID: 0}
     - target: {fileID: 7480777726049967478, guid: 335079befed9c13409db5f8916040f25,
         type: 3}
@@ -3797,7 +3797,7 @@ PrefabInstance:
     - target: {fileID: 8531981430910139893, guid: 2a8ef5ad875436d4c9d5acd056d152f6,
         type: 3}
       propertyPath: m_Name
-      value: interactuable-2
+      value: interactuable-2-null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3959,7 +3959,7 @@ PrefabInstance:
     - target: {fileID: 6386737081790205129, guid: d7f417ea6f698e942848a83082c2b740,
         type: 3}
       propertyPath: m_Name
-      value: interactuable-3
+      value: interactuable-3-null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4543,7 +4543,7 @@ PrefabInstance:
     - target: {fileID: 6386737081790205129, guid: d7f417ea6f698e942848a83082c2b740,
         type: 3}
       propertyPath: m_Name
-      value: interactuable-3 (1)
+      value: interactuable-3 (1)-null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4861,7 +4861,7 @@ PrefabInstance:
     - target: {fileID: 6297973007661569580, guid: 335079befed9c13409db5f8916040f25,
         type: 3}
       propertyPath: m_Name
-      value: Interactuable-1
+      value: Interactuable-1-OK
       objectReference: {fileID: 0}
     - target: {fileID: 7480777726049967478, guid: 335079befed9c13409db5f8916040f25,
         type: 3}
@@ -4955,14 +4955,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906917666}
-  m_LocalRotation: {x: 0.16200092, y: -0.75331056, z: 0.20184898, w: 0.6045956}
+  m_LocalRotation: {x: 0.15970068, y: -0.76012087, z: 0.20367381, w: 0.5960109}
   m_LocalPosition: {x: 2, y: -0.5, z: -1.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 851200178}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 30, y: -102.5, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: -103.8, z: 0}
 --- !u!114 &1906917668
 MonoBehaviour:
   m_ObjectHideFlags: 0
