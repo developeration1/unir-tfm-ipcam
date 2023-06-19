@@ -9,22 +9,22 @@ public class CameraSelector : MonoBehaviour
 {
     [SerializeField] private Material cameraRenderTextureMaterial;
     [SerializeField] private string mainTextureProperty;
-    [SerializeField] private Camera _camera;
+    [SerializeField] private RotatoryCamera rotatoryCamera;
     private Image image;
     private Button button;
 
     void Start()
     {
         image = GetComponent<Image>();
-        image.material = new Material(cameraRenderTextureMaterial);
-        image.material.SetTexture(mainTextureProperty, _camera.targetTexture);
+        image.material = rotatoryCamera.EndMaterial;
         button = GetComponent<Button>();
         button.onClick.AddListener(SelectCamera);
     }
 
     private void SelectCamera()
     {
-        CameraManager.Instance.SelectedCamera = _camera;
-        print("executed");
+        CameraManager.Instance.SelectedCamera.SetAudio(false);
+        rotatoryCamera.SetAudio(true);
+        CameraManager.Instance.SelectedCamera = rotatoryCamera;
     }
 }

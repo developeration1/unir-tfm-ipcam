@@ -6,17 +6,17 @@ using Utils;
 
 public class CameraManager : Singleton<CameraManager>
 {
-    [SerializeField] Camera _selectedCamera;
+    [SerializeField] RotatoryCamera _selectedCamera;
 
     public delegate void OnSelectCameraEvent();
     public OnSelectCameraEvent onSelectCamera;
 
-    public Camera SelectedCamera
+    public RotatoryCamera SelectedCamera
     {
         get => _selectedCamera;
         set
         {
-            _selectedCamera = value;
+            _selectedCamera = value; 
             onSelectCamera.Invoke();
         } 
     }

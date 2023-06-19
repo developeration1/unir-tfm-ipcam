@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Move-RenderTexture.unity
     guid: 092f18d375dd2ef4d8685b0999454d4b
+  - enabled: 0
+    path: Assets/Scenes/integration/escenario.unity
+    guid: f062dc149a81e3a448b77e20845cd32e
   m_configObjects: {}
