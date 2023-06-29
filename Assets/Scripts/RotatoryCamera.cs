@@ -47,7 +47,7 @@ public class RotatoryCamera : MonoBehaviour
     public void Zoom(float direction)
     {
         direction = Mathf.Clamp(direction, -1, 1);
-        print(direction);
+        //print(direction);
         if (direction < 0 && original.fieldOfView < minZoom)
         {
             original.fieldOfView += zoomPerFixedFrame;

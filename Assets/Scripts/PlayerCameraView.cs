@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 using doozyManager = Doozy.Runtime.UIManager;
 
@@ -41,14 +40,14 @@ public class PlayerCameraView : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(RectTransformUtility.ScreenPointToLocalPointInRectangle(image.rectTransform, eventData.position, null, out Vector2 result))
+        if(!PlayerManager.Instance.InCintematic && RectTransformUtility.ScreenPointToLocalPointInRectangle(image.rectTransform, eventData.position, null, out Vector2 result))
         {
             result += image.rectTransform.sizeDelta / 2;
             result = new Vector2(result.x * cameraManager.SelectedCamera.Cam.pixelWidth, result.y * cameraManager.SelectedCamera.Cam.pixelHeight) / image.rectTransform.sizeDelta;
             Ray ray = cameraManager.SelectedCamera.Cam.ScreenPointToRay(result);
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, groundLayer))
             {
-                print("a");
+                //print("a");
                 PlayerManager.Instance.MoveToPosition(hit.point);
                 return;
             }
