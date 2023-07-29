@@ -1,4 +1,5 @@
 using Doozy.Runtime.UIManager.Components;
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,7 +54,12 @@ public class PlayerCameraView : MonoBehaviour, IPointerClickHandler
             }
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, interactibleLayer))
             {
-                PlayerManager.Instance.MoveToPosition(hit.transform.GetChild(0).position);
+                if(hit.transform.TryGetComponent(out Interactible interactible))
+                {
+                    PlayerManager.Instance.Inspect(interactible);
+                }
+                //PlayerManager.Instance.MoveToPosition(hit.transform.GetChild(0).position);
+                //PlayerManager.Instance.Inspect(hit.transform.GetChild(0).position);
                 return;
             }
         }

@@ -4,5 +4,7 @@ using UnityEngine;
 
 public abstract class InteractibleData : ScriptableObject
 {
-    public abstract void GiveParametersToPlayer();
+    [SerializeField] InteractibleHeight height;
+    public InteractibleHeight Height => height;
+    public abstract string GiveParametersToPlayer(Interactible owner);
 }

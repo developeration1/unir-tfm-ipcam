@@ -1,15 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.InputSystem.UI;
 
+[CreateAssetMenu(fileName = "Interactible Key", menuName = "Interactibles/Key")]
 public class InteractibleData_Key : InteractibleData
 {
     [SerializeField] Key key;
-    public override void GiveParametersToPlayer()
+    [SerializeField] string password;
+    [SerializeField] string passwordHint;
+
+    public override string GiveParametersToPlayer(Interactible owner)
     {
-        PlayerManager.Instance.Keys.Add(key);
-        PlayerManager.Instance.MoveToPosition(PlayerManager.Instance.CameraPivotPosition);
-        PlayerManager.Instance.InCintematic = true;
+        if(password == null || password == "")
+        {
+            PlayerManager.Instance.Keys.Add(key);
+            Destroy(owner);
+            return "";
+        }
+        return passwordHint;
     }
+}
+
+public enum InteractibleHeight
+{
+    High,
+    Low
 }
