@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractibleData_Clue : MonoBehaviour
+[CreateAssetMenu(fileName = "Interactible Clue", menuName = "Interactibles/Clue")]
+public class InteractibleData_Clue : InteractibleData
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] string clue;
+    public override string GiveParametersToPlayer(Interactible owner)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(owner);
+        return clue;
     }
 }

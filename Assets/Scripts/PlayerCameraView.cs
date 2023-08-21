@@ -48,7 +48,6 @@ public class PlayerCameraView : MonoBehaviour, IPointerClickHandler
             Ray ray = cameraManager.SelectedCamera.Cam.ScreenPointToRay(result);
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, groundLayer))
             {
-                //print("a");
                 PlayerManager.Instance.MoveToPosition(hit.point);
                 return;
             }

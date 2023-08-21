@@ -17,14 +17,8 @@ public class InteractibleData_Key : InteractibleData
         {
             PlayerManager.Instance.Keys.Add(key);
             Destroy(owner);
-            return "";
+            return "key";
         }
         return passwordHint;
     }
-}
-
-public enum InteractibleHeight
-{
-    High,
-    Low
 }

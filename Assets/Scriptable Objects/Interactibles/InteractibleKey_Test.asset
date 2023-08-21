@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f395a9c3f83982a43a89e94e6710a57f, type: 3}
   m_Name: InteractibleKey_Test
   m_EditorClassIdentifier: 
+  height: 1
   key: {fileID: 11400000, guid: eaa107da997c13a46abd1e71679cb87f, type: 2}
+  password: 
+  passwordHint: adfadsa
