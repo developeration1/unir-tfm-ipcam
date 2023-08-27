@@ -41,7 +41,7 @@ public class PlayerCameraView : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(!PlayerManager.Instance.InCintematic && RectTransformUtility.ScreenPointToLocalPointInRectangle(image.rectTransform, eventData.position, null, out Vector2 result))
+        if(!PlayerManager.Instance.InCinematic && RectTransformUtility.ScreenPointToLocalPointInRectangle(image.rectTransform, eventData.position, null, out Vector2 result))
         {
             result += image.rectTransform.sizeDelta / 2;
             result = new Vector2(result.x * cameraManager.SelectedCamera.Cam.pixelWidth, result.y * cameraManager.SelectedCamera.Cam.pixelHeight) / image.rectTransform.sizeDelta;

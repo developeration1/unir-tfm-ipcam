@@ -1,6 +1,8 @@
+using CielaSpike;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
@@ -11,14 +13,16 @@ public class PlayerManager : Singleton<PlayerManager>
     [SerializeField] private CharacterNavMeshAgent _agent;
     [SerializeField] private Transform cameraPivot;
     [SerializeField] private List<Key> keys;
-    [SerializeField] private bool inCintematic;
+    [SerializeField] private bool inCinematic;
+
+    [SerializeField] private List<string> answers;
 
     private string playerParameter;
 
     public bool IsMoving => _agent.IsMoving;
     public List<Key> Keys => keys;
     public Vector3 CameraPivotPosition => cameraPivot.position;
-    public bool InCintematic => inCintematic;
+    public bool InCinematic => inCinematic;
 
     public void MoveToPosition(Vector3 position)
     {
@@ -32,7 +36,7 @@ public class PlayerManager : Singleton<PlayerManager>
 
     private IEnumerator InspectRoutine(Interactible interactible)
     {
-        inCintematic = true;
+        inCinematic = true;
         MoveToPosition(interactible.Position);
         yield return null;
         //print("Start Moving");
@@ -96,7 +100,28 @@ public class PlayerManager : Singleton<PlayerManager>
             }
         }
         
-        inCintematic = false;
+        inCinematic = false;
+    }
+
+    public void ReceiveAnswer(string message)
+    {
+        StartCoroutine(ReadAnswerRoutine(message));
+    }
+
+    public IEnumerator ReadAnswerRoutine(string message)
+    {
+        inCinematic = true;
+        if (GameManager.EvaluateAnswer(message))
+        {
+            answers.Add(message);
+        }
+        _agent.DoAction(CharacterAction.ReadMessage);
+        yield return null;
+        while (_agent.IsActing)
+        {
+            yield return null;
+        }
+        inCinematic = false;
     }
 
     public bool HasKey(int id)
@@ -107,5 +132,10 @@ public class PlayerManager : Singleton<PlayerManager>
                 return true;
         }
         return false;
+    }
+
+    public bool HasAnswer(string answer)
+    {
+        return answers.Contains(answer);
     }
 }

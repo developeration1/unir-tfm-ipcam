@@ -60,6 +60,12 @@ public class CharacterAnimationManager : MonoBehaviour
         anim.SetTrigger("Write");
     }
 
+    public void ReadMessage()
+    {
+        currentAction = CharacterAction.ReadMessage;
+        anim.SetTrigger("Read Message");
+    }
+
     public void FinishedActing(float delay = 0)
     {
         StartCoroutine(FinishedActingRoutine(delay));
