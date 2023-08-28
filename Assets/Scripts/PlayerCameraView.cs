@@ -46,19 +46,21 @@ public class PlayerCameraView : MonoBehaviour, IPointerClickHandler
             result += image.rectTransform.sizeDelta / 2;
             result = new Vector2(result.x * cameraManager.SelectedCamera.Cam.pixelWidth, result.y * cameraManager.SelectedCamera.Cam.pixelHeight) / image.rectTransform.sizeDelta;
             Ray ray = cameraManager.SelectedCamera.Cam.ScreenPointToRay(result);
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, groundLayer))
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactibleLayer))
             {
-                PlayerManager.Instance.MoveToPosition(hit.point);
-                return;
-            }
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, interactibleLayer))
-            {
-                if(hit.transform.TryGetComponent(out Interactible interactible))
+                print("interactible");
+                if (hit.transform.TryGetComponent(out Interactible interactible))
                 {
                     PlayerManager.Instance.Inspect(interactible);
                 }
                 //PlayerManager.Instance.MoveToPosition(hit.transform.GetChild(0).position);
                 //PlayerManager.Instance.Inspect(hit.transform.GetChild(0).position);
+                return;
+            }
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
+            {
+                print("ground");
+                PlayerManager.Instance.MoveToPosition(hit.point);
                 return;
             }
         }

@@ -62,8 +62,14 @@ public class CharacterAnimationManager : MonoBehaviour
 
     public void ReadMessage()
     {
-        currentAction = CharacterAction.ReadMessage;
+        currentAction = CharacterAction.ReadingMessage;
         anim.SetTrigger("Read Message");
+    }
+
+    public void Confused()
+    {
+        currentAction = CharacterAction.Confusing;
+        anim.SetTrigger("Confused");
     }
 
     public void FinishedActing(float delay = 0)

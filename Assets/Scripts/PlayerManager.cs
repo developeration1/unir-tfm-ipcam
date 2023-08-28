@@ -65,6 +65,12 @@ public class PlayerManager : Singleton<PlayerManager>
         if (playerParameter == "" || playerParameter == null)
         {
             //in case of null
+            yield return null;
+            _agent.DoAction(CharacterAction.Confusing);
+            while (_agent.IsActing)
+            {
+                yield return null;
+            }
         }
         else
         {
@@ -115,7 +121,7 @@ public class PlayerManager : Singleton<PlayerManager>
         {
             answers.Add(message);
         }
-        _agent.DoAction(CharacterAction.ReadMessage);
+        _agent.DoAction(CharacterAction.ReadingMessage);
         yield return null;
         while (_agent.IsActing)
         {
