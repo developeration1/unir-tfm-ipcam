@@ -62,8 +62,14 @@ public class CharacterAnimationManager : MonoBehaviour
 
     public void ReadMessage()
     {
-        currentAction = CharacterAction.ReadMessage;
+        currentAction = CharacterAction.ReadingMessage;
         anim.SetTrigger("Read Message");
+    }
+
+    public void Confused()
+    {
+        currentAction = CharacterAction.Confusing;
+        anim.SetTrigger("Confused");
     }
 
     public void FinishedActing(float delay = 0)
@@ -74,7 +80,7 @@ public class CharacterAnimationManager : MonoBehaviour
     private IEnumerator FinishedActingRoutine(float delay)
     {
         yield return new WaitForSeconds(delay);
-        print("finished time");
+        //print("finished time");
         OnFinishedActing.Invoke(currentAction);
         currentAction = CharacterAction.None;
     }

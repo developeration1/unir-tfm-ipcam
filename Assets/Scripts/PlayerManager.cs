@@ -20,8 +20,12 @@ public class PlayerManager : Singleton<PlayerManager>
     private string playerParameter;
 
     public bool IsMoving => _agent.IsMoving;
+    public Transform CameraPivot
+    {
+        get => cameraPivot;
+        set => cameraPivot = value;
+    }
     public List<Key> Keys => keys;
-    public Vector3 CameraPivotPosition => cameraPivot.position;
     public bool InCinematic => inCinematic;
 
     public void MoveToPosition(Vector3 position)
@@ -65,6 +69,12 @@ public class PlayerManager : Singleton<PlayerManager>
         if (playerParameter == "" || playerParameter == null)
         {
             //in case of null
+            yield return null;
+            _agent.DoAction(CharacterAction.Confusing);
+            while (_agent.IsActing)
+            {
+                yield return null;
+            }
         }
         else
         {
@@ -92,7 +102,7 @@ public class PlayerManager : Singleton<PlayerManager>
                 yield return null;
             }
             yield return null;
-            _agent.DoAction(CharacterAction.Showing);
+            _agent.DoAction(cameraPivot.rotation, CharacterAction.Showing);
             yield return null;
             while (_agent.IsActing)
             {
@@ -115,7 +125,7 @@ public class PlayerManager : Singleton<PlayerManager>
         {
             answers.Add(message);
         }
-        _agent.DoAction(CharacterAction.ReadMessage);
+        _agent.DoAction(CharacterAction.ReadingMessage);
         yield return null;
         while (_agent.IsActing)
         {

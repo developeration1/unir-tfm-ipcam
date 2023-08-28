@@ -74,8 +74,11 @@ public class CharacterNavMeshAgent : MonoBehaviour
             case CharacterAction.Showing:
                 animationManager.Show = true;
                 break;
-            case CharacterAction.ReadMessage:
+            case CharacterAction.ReadingMessage:
                 animationManager.ReadMessage();
+                break;
+            case CharacterAction.Confusing:
+                animationManager.Confused();
                 break;
             default:
                 break;
@@ -98,5 +101,6 @@ public enum CharacterAction
     LowInspection,
     Writing,
     Showing,
-    ReadMessage
+    ReadingMessage,
+    Confusing
 }
