@@ -649,6 +649,11 @@ MonoBehaviour:
   ip: 0.0.0.0
   passwords:
   - hello
+  tagToPivotList:
+  - tag: Sotano
+    pivot: {fileID: 1294019920}
+  - tag: Cocina
+    pivot: {fileID: 982948155}
 --- !u!1 &118056622
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +797,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1294019920}
+  - {fileID: 982948155}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -990,6 +996,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8531981430910139893, guid: 2a8ef5ad875436d4c9d5acd056d152f6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1026,6 +1037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616791182174085107, guid: df7d0cd3e6cf2a647aac1c55fd2ea5c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
       objectReference: {fileID: 0}
     - target: {fileID: 3585433029657638847, guid: df7d0cd3e6cf2a647aac1c55fd2ea5c9,
         type: 3}
@@ -1313,6 +1329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616791182174085107, guid: df7d0cd3e6cf2a647aac1c55fd2ea5c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
       objectReference: {fileID: 0}
     - target: {fileID: 3585433029657638847, guid: df7d0cd3e6cf2a647aac1c55fd2ea5c9,
         type: 3}
@@ -1715,6 +1736,34 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!1 &675624738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4222636362150810173, guid: 34d2a0e195a8c184db8f762454382e7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1779071617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &675624742
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675624738}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1772443453231563897, guid: 34d2a0e195a8c184db8f762454382e7e, type: 3}
 --- !u!1 &695667973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,6 +2072,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2283369636858593793, guid: 9b5e78afd4d3d6e43ab7535bd711fa04,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
+      objectReference: {fileID: 0}
     - target: {fileID: -738171071962266656, guid: 9b5e78afd4d3d6e43ab7535bd711fa04,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2062,6 +2116,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705388767457054076, guid: 9b5e78afd4d3d6e43ab7535bd711fa04,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3531,6 +3590,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1900268844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &982948154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 982948155}
+  m_Layer: 0
+  m_Name: cocina
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &982948155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982948154}
+  m_LocalRotation: {x: 0, y: 0.9876064, z: -0, w: -0.15695141}
+  m_LocalPosition: {x: -1.619, y: 0.01, z: -0.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 168136752}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 198.06, z: 0}
 --- !u!1 &983482447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4083,6 +4173,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6297973007661569580, guid: 335079befed9c13409db5f8916040f25,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
+      objectReference: {fileID: 0}
     - target: {fileID: 7480777726049967478, guid: 335079befed9c13409db5f8916040f25,
         type: 3}
       propertyPath: m_RootOrder
@@ -4185,6 +4280,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6297973007661569580, guid: 335079befed9c13409db5f8916040f25,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
+      objectReference: {fileID: 0}
     - target: {fileID: 7480777726049967478, guid: 335079befed9c13409db5f8916040f25,
         type: 3}
       propertyPath: m_RootOrder
@@ -4278,7 +4378,7 @@ GameObject:
   - component: {fileID: 1131574462}
   m_Layer: 6
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Sotano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5193,6 +5293,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8531981430910139893, guid: 2a8ef5ad875436d4c9d5acd056d152f6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5434,6 +5539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386737081790205129, guid: d7f417ea6f698e942848a83082c2b740,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6337,6 +6447,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6386737081790205129, guid: d7f417ea6f698e942848a83082c2b740,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6450,10 +6565,24 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4222636362150810173, guid: 34d2a0e195a8c184db8f762454382e7e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222636362150810173, guid: 34d2a0e195a8c184db8f762454382e7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cocina
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4222636362150810173, guid: 34d2a0e195a8c184db8f762454382e7e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 675624742}
   m_SourcePrefab: {fileID: 100100000, guid: 34d2a0e195a8c184db8f762454382e7e, type: 3}
 --- !u!1 &1805759776
 GameObject:
@@ -6747,6 +6876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297973007661569580, guid: 335079befed9c13409db5f8916040f25,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sotano
       objectReference: {fileID: 0}
     - target: {fileID: 7480777726049967478, guid: 335079befed9c13409db5f8916040f25,
         type: 3}

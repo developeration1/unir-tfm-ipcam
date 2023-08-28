@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sotano
+  - Cocina
+  - Piscina
+  - Dormitorio
+  - Exterior
+  - Oficina
+  - Pasillo
+  - Sala
   layers:
   - Default
   - TransparentFX

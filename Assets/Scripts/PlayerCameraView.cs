@@ -46,9 +46,14 @@ public class PlayerCameraView : MonoBehaviour, IPointerClickHandler
             result += image.rectTransform.sizeDelta / 2;
             result = new Vector2(result.x * cameraManager.SelectedCamera.Cam.pixelWidth, result.y * cameraManager.SelectedCamera.Cam.pixelHeight) / image.rectTransform.sizeDelta;
             Ray ray = cameraManager.SelectedCamera.Cam.ScreenPointToRay(result);
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactibleLayer))
+            if(Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, interactibleLayer | groundLayer))
             {
-                print("interactible");
+                if(GameManager.Instance.PivotExists(hit.transform.tag))
+                    PlayerManager.Instance.CameraPivot = GameManager.Instance.PivotFromTag(hit.transform.tag);
+            }
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, interactibleLayer))
+            {
+                //print("interactible");
                 if (hit.transform.TryGetComponent(out Interactible interactible))
                 {
                     PlayerManager.Instance.Inspect(interactible);
@@ -59,7 +64,7 @@ public class PlayerCameraView : MonoBehaviour, IPointerClickHandler
             }
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
             {
-                print("ground");
+                //print("ground");
                 PlayerManager.Instance.MoveToPosition(hit.point);
                 return;
             }

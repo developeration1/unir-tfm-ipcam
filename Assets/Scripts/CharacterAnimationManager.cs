@@ -80,7 +80,7 @@ public class CharacterAnimationManager : MonoBehaviour
     private IEnumerator FinishedActingRoutine(float delay)
     {
         yield return new WaitForSeconds(delay);
-        print("finished time");
+        //print("finished time");
         OnFinishedActing.Invoke(currentAction);
         currentAction = CharacterAction.None;
     }
