@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class CameraSelector : MonoBehaviour
 {
     [SerializeField] private Material cameraRenderTextureMaterial;
-    [SerializeField] private string mainTextureProperty;
     [SerializeField] private RotatoryCamera rotatoryCamera;
     private Image image;
     private Button button;
