@@ -54,7 +54,10 @@ public class PlayerCameraView : MonoBehaviour, IPointerClickHandler
                 if(((groundLayer | interactibleLayer) & (1 << hit.transform.gameObject.layer)) != 0)
                 {
                     if (GameManager.Instance.PivotExists(hit.transform.tag))
+                    {
                         PlayerManager.Instance.CameraPivot = GameManager.Instance.PivotFromTag(hit.transform.tag);
+                        PlayerManager.Instance.SetPositionToHand(GameManager.Instance.HandFromTag(hit.transform.tag));
+                    }
                     if ((interactibleLayer & (1 << hit.transform.gameObject.layer)) != 0)
                     {
                         //print("interactible");

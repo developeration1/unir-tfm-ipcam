@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6340,7 +6340,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 0.07, y: 1.2750001, z: 1.1}
   m_MoveThreshold: 0.1
-  m_Carve: 0
+  m_Carve: 1
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.030000001, y: 0, z: 0.55}
   m_TimeToStationary: 0.5
@@ -28910,20 +28910,28 @@ MonoBehaviour:
   tagToPivotList:
   - tag: Sotano
     pivot: {fileID: 857548711}
+    hand: {fileID: 0}
   - tag: Cocina
     pivot: {fileID: 638365767}
+    hand: {fileID: 0}
   - tag: Piscina
     pivot: {fileID: 0}
+    hand: {fileID: 0}
   - tag: Dormitorio
     pivot: {fileID: 0}
+    hand: {fileID: 0}
   - tag: Exterior
     pivot: {fileID: 0}
+    hand: {fileID: 0}
   - tag: Oficina
     pivot: {fileID: 0}
+    hand: {fileID: 0}
   - tag: Pasillo
     pivot: {fileID: 0}
+    hand: {fileID: 0}
   - tag: Sala
     pivot: {fileID: 0}
+    hand: {fileID: 0}
 --- !u!4 &2048825821
 Transform:
   m_ObjectHideFlags: 0

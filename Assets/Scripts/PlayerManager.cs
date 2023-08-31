@@ -12,6 +12,7 @@ public class PlayerManager : Singleton<PlayerManager>
 {
     [SerializeField] private CharacterNavMeshAgent _agent;
     [SerializeField] private Transform cameraPivot;
+    [SerializeField] private Hand hand;
     [SerializeField] private List<Key> keys;
     [SerializeField] private bool inCinematic;
 
@@ -27,6 +28,12 @@ public class PlayerManager : Singleton<PlayerManager>
     }
     public List<Key> Keys => keys;
     public bool InCinematic => inCinematic;
+
+    public void SetPositionToHand(Transform pivot)
+    {
+        hand.transform.position = pivot.position;
+        hand.transform.rotation = pivot.rotation;
+    }
 
     public void MoveToPosition(Vector3 position)
     {
@@ -87,10 +94,13 @@ public class PlayerManager : Singleton<PlayerManager>
                 {
                     yield return null;
                 }
+                hand.Info = playerParameter;
+                hand.IsKey = false;
                 //add note to hand
             }
             else
             {
+                hand.IsKey = true;
                 //in case of key
                 //add key to hand
             }
@@ -104,10 +114,14 @@ public class PlayerManager : Singleton<PlayerManager>
             yield return null;
             _agent.DoAction(cameraPivot.rotation, CharacterAction.Showing);
             yield return null;
+            hand.Showing = true;
+            print("showing");
             while (_agent.IsActing)
             {
                 yield return null;
             }
+            yield return new WaitForSeconds(7);
+            hand.Showing = false;
         }
         
         inCinematic = false;
