@@ -38,13 +38,25 @@ public class GameManager : Singleton<GameManager>
         return null;
     }
 
+    public Transform HandFromTag(string tag)
+    {
+        foreach (TagToPivot item in tagToPivotList)
+        {
+            if (item.Tag == tag)
+                return item.Hand;
+        }
+        return null;
+    }
+
     [Serializable]
     private struct TagToPivot
     {
         [SerializeField] string tag;
         [SerializeField] Transform pivot;
+        [SerializeField] Transform hand;
 
         public string Tag => tag;
         public Transform Pivot => pivot;
+        public Transform Hand => hand;
     }
 }
