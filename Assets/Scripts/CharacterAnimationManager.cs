@@ -72,6 +72,12 @@ public class CharacterAnimationManager : MonoBehaviour
         anim.SetTrigger("Confused");
     }
 
+    public void Death()
+    {
+        currentAction = CharacterAction.Death;
+        anim.SetTrigger("Death");
+    }
+
     public void FinishedActing(float delay = 0)
     {
         StartCoroutine(FinishedActingRoutine(delay));

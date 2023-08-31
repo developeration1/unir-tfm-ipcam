@@ -80,6 +80,9 @@ public class CharacterNavMeshAgent : MonoBehaviour
             case CharacterAction.Confusing:
                 animationManager.Confused();
                 break;
+            case CharacterAction.Death:
+                animationManager.Death();
+                break;
             default:
                 break;
         }
@@ -102,5 +105,6 @@ public enum CharacterAction
     Writing,
     Showing,
     ReadingMessage,
-    Confusing
+    Confusing,
+    Death
 }

@@ -71,6 +71,19 @@ public class PlayerManager : Singleton<PlayerManager>
         StartCoroutine(ExecuteParametersRoutine());
     }
 
+    public void Die()
+    {
+        _agent.DoAction(CharacterAction.Death);
+        inCinematic = true;
+        StartCoroutine(DieRoutine());
+    }
+
+    private IEnumerator DieRoutine()
+    {
+        yield return new WaitForSeconds(4);
+        Application.Quit();
+    }
+
     private IEnumerator ExecuteParametersRoutine()
     {
         if (playerParameter == "" || playerParameter == null)
