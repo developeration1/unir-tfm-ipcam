@@ -580,7 +580,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 498a02c4b93985349af03eaba13b8115,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1002682931589146392, guid: 498a02c4b93985349af03eaba13b8115,
         type: 3}
@@ -8253,7 +8253,7 @@ PrefabInstance:
     - target: {fileID: -7786405942167075839, guid: 027bccf8d05bc854d8d2b60d838d32e4,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: -7604848077056950759, guid: 027bccf8d05bc854d8d2b60d838d32e4,
         type: 3}
@@ -37750,7 +37750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ip: 0.0.0.0
   passwords:
-  - hello
+  - 1509
   tagToPivotList:
   - tag: Sotano
     pivot: {fileID: 857548711}
