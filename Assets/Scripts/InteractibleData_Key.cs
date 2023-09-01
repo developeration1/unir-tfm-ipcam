@@ -13,7 +13,7 @@ public class InteractibleData_Key : InteractibleData
 
     public override string GiveParametersToPlayer(Interactible owner)
     {
-        if(password == null || password == "")
+        if(password == null || password == "" || PlayerManager.Instance.HasAnswer(password))
         {
             PlayerManager.Instance.Keys.Add(key);
             Destroy(owner);

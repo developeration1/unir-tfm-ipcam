@@ -7,6 +7,9 @@ public class Hand : MonoBehaviour
 {
     [SerializeField] TMP_Text info;
     [SerializeField] bool isKey;
+    [SerializeField] Transform keyTransform;
+    [SerializeField] Transform noteTransform;
+    [SerializeField] GameObject keyInstance;
 
     private Animator anim;
 
@@ -18,7 +21,18 @@ public class Hand : MonoBehaviour
     public bool IsKey
     {
         get => isKey;
-        set => isKey = value;
+        set
+        {
+            isKey = value;
+            keyTransform.gameObject.SetActive(value);
+            noteTransform.gameObject.SetActive(!value);
+            if(PlayerManager.Instance.Keys.Count > 0)
+            {
+                if (keyInstance != null)
+                    Destroy(keyInstance);
+                keyInstance = Instantiate(PlayerManager.Instance.Keys[PlayerManager.Instance.Keys.Count - 1].KeyItself, keyTransform.position, keyTransform.rotation);
+            }
+        }
     }
 
     public string Info

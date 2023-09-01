@@ -107,14 +107,14 @@ public class PlayerManager : Singleton<PlayerManager>
                 {
                     yield return null;
                 }
-                hand.Info = playerParameter;
                 hand.IsKey = false;
+                hand.Info = playerParameter;
                 //add note to hand
             }
             else
             {
                 hand.IsKey = true;
-                GameManager.Instance.TryUnlockDoors(Keys[Keys.Count - 1]);
+                GameManager.Instance.TryUnlockDoors(Keys[^1]);
                 //in case of key
                 //add key to hand
             }

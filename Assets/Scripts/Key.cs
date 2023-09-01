@@ -9,4 +9,5 @@ public class Key : ScriptableObject
     [SerializeField] GameObject key;
 
     public int ID => id;
+    public GameObject KeyItself => key;
 }
