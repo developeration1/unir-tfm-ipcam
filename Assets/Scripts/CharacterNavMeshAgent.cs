@@ -1,12 +1,6 @@
 using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading.Tasks;
-using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Events;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class CharacterNavMeshAgent : MonoBehaviour
