@@ -114,6 +114,7 @@ public class PlayerManager : Singleton<PlayerManager>
             else
             {
                 hand.IsKey = true;
+                GameManager.Instance.TryUnlockDoors(Keys[Keys.Count - 1]);
                 //in case of key
                 //add key to hand
             }
