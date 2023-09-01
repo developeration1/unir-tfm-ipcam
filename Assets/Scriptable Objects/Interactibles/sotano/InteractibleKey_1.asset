@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: InteractibleKey_1
   m_EditorClassIdentifier: 
   height: 0
-  key: {fileID: 11400000, guid: 366de9a26f8da37438fdec2f8371e5b5, type: 2}
+  key: {fileID: 11400000, guid: fd6b42ac2ecac2146a99dd4e3096afa7, type: 2}
   password: 1509
   passwordHint: "codigo de 4 d\xEDgitos"

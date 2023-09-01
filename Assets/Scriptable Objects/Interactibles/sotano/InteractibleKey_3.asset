@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: InteractibleKey_3
   m_EditorClassIdentifier: 
   height: 0
-  key: {fileID: 11400000, guid: 366de9a26f8da37438fdec2f8371e5b5, type: 2}
+  key: {fileID: 11400000, guid: 6a8e11c0a2deebf48956652c8f7b1527, type: 2}
   password: 
   passwordHint: llave importante para escapar
+  test: 

@@ -10,7 +10,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private string ip = "0.0.0.0";
     [SerializeField] private List<string> passwords;
     [SerializeField] private List<TagToPivot> tagToPivotList;
-    [SerializeField] UnityEvent OnKeyGet;
+    [SerializeField] UnityEvent<Key> OnKeyGet;
 
     public string IP => ip;
 
@@ -22,7 +22,7 @@ public class GameManager : Singleton<GameManager>
 
     public void TryUnlockDoors(Key key)
     {
-        OnKeyGet.Invoke();
+        OnKeyGet.Invoke(key);
     }
 
     public bool PivotExists(string tag)

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: InteractibleKey_6
   m_EditorClassIdentifier: 
   height: 1
-  key: {fileID: 11400000, guid: de597540ba34223468f453008ee382e8, type: 2}
+  key: {fileID: 11400000, guid: ed52cb878add15b48943bc30547fe8f2, type: 2}
   password: MCAU
   passwordHint: codigo de 4 letras
+  test: 

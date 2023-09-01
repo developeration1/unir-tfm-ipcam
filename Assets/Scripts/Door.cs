@@ -12,13 +12,17 @@ public class Door : MonoBehaviour
 
     private void Start()
     {
-        obstacle.enabled = true;
+        obstacle.enabled = keyReference != null;
     }
 
     public void TryUnlock(Key key)
     {
-        if (keyReference == key)
-            obstacle.enabled = false;
+        if(keyReference != null)
+        {
+            if (keyReference == key)
+                obstacle.enabled = false;
+        }
+        
     }
 
     private void OnTriggerEnter(Collider other)

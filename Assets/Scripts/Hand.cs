@@ -30,7 +30,7 @@ public class Hand : MonoBehaviour
             {
                 if (keyInstance != null)
                     Destroy(keyInstance);
-                keyInstance = Instantiate(PlayerManager.Instance.Keys[PlayerManager.Instance.Keys.Count - 1].KeyItself, keyTransform.position, keyTransform.rotation);
+                keyInstance = Instantiate(PlayerManager.Instance.Keys[PlayerManager.Instance.Keys.Count - 1].KeyItself, keyTransform);
             }
         }
     }
