@@ -282,6 +282,9 @@ MonoBehaviour:
   interactibleLayer:
     serializedVersion: 2
     m_Bits: 128
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
   rotationRightButton: {fileID: 7957976994792146915}
   rotationLeftButton: {fileID: 1015458924243801876}
   zoomInButton: {fileID: 9082123160609747961}
@@ -3035,6 +3038,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera Selector (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340457417826645481, guid: c46a186b2b3962a4092347b6976638d9,
+        type: 3}
+      propertyPath: m_text
+      value: DORMITORIO
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3183,6 +3191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Camera Selector (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340457417826645481, guid: c46a186b2b3962a4092347b6976638d9,
+        type: 3}
+      propertyPath: m_text
+      value: PASILLO
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3333,6 +3346,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera Selector (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340457417826645481, guid: c46a186b2b3962a4092347b6976638d9,
+        type: 3}
+      propertyPath: m_text
+      value: OFICINA
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3482,6 +3500,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera Selector (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340457417826645481, guid: c46a186b2b3962a4092347b6976638d9,
+        type: 3}
+      propertyPath: m_text
+      value: SOTANO
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3615,6 +3638,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Camera Selector
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340457417826645481, guid: c46a186b2b3962a4092347b6976638d9,
+        type: 3}
+      propertyPath: m_text
+      value: EXTERIOR
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3765,6 +3793,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera Selector (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340457417826645481, guid: c46a186b2b3962a4092347b6976638d9,
+        type: 3}
+      propertyPath: m_text
+      value: COCINA
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3914,6 +3947,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera Selector (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7340457417826645481, guid: c46a186b2b3962a4092347b6976638d9,
+        type: 3}
+      propertyPath: m_text
+      value: SALA
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4047,6 +4085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Camera Selector (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340457417826645481, guid: c46a186b2b3962a4092347b6976638d9,
+        type: 3}
+      propertyPath: m_text
+      value: PISCINA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

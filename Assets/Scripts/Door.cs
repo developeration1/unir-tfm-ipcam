@@ -27,9 +27,15 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        print(other.tag);
         if (other.CompareTag("Player") && !obstacle.enabled)
         {
             animator.SetBool("Open", true);
+        }
+        if (other.CompareTag("Enemy"))
+        {
+            animator.SetBool("Open", true);
+            
         }
     }
 
@@ -38,6 +44,11 @@ public class Door : MonoBehaviour
         if (other.CompareTag("Player") && !obstacle.enabled)
         {
             animator.SetBool("Open", false);
+        }
+        if (other.CompareTag("Enemy"))
+        {
+            animator.SetBool("Open", false);
+            print("cierra puerta enemigo");
         }
     }
 }

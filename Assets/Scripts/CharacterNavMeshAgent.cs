@@ -17,6 +17,8 @@ public class CharacterNavMeshAgent : MonoBehaviour
 
     public bool IsActing => animationManager.CurrentAction != CharacterAction.None;
 
+    [SerializeField] private float moveVel = 0.5f;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -29,14 +31,14 @@ public class CharacterNavMeshAgent : MonoBehaviour
     {
         //print(IsMoving);
         _isMoving = _agent.remainingDistance > .001f; //_agent.velocity.sqrMagnitude > .01;
-        animationManager.Velocity = Mathf.Lerp(animationManager.Velocity, _agent.velocity.magnitude, .1f);
+        animationManager.Velocity = Mathf.Lerp(animationManager.Velocity, _agent.velocity.magnitude, moveVel);
     }
 
     private void LateUpdate()
     {
         if (_agent.velocity.sqrMagnitude > Mathf.Epsilon)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(_agent.velocity.normalized), .1f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(_agent.velocity.normalized), moveVel);
         }
     }
 

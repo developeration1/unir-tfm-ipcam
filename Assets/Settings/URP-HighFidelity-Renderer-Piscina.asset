@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     Event: 500
-    blitMaterial: {fileID: 2100000, guid: 87025acace1d8494bb0cccb9f9ceacac, type: 2}
+    blitMaterial: {fileID: 2100000, guid: aae4f9fb9a2e1504e9438687e6ca2648, type: 2}
     blitMaterialPassIndex: 0
     setInverseViewMatrix: 0
     requireDepthNormals: 0
