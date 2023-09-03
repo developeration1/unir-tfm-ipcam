@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a639eb6c82ecda46a3c8fa04c61113a, type: 3}
+  m_Name: interatable-4-llave de estudio
+  m_EditorClassIdentifier: 
+  id: 204
+  key: {fileID: 919132149155446097, guid: f41c4a1d1de56614c807beef5d30e5d5, type: 3}
