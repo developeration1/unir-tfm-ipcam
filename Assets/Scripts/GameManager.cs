@@ -16,7 +16,7 @@ public class GameManager : Singleton<GameManager>
 
     public static bool EvaluateAnswer(string message)
     {
-        message = message.ToLower();
+        message = message.ToUpper();
         return Instance.passwords.Contains(message);
     }
 

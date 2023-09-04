@@ -43,6 +43,7 @@ public class BeeperChatManager : Singleton<BeeperChatManager>
         JSONObject msg = JSONNode.Parse(message) as JSONObject;
         if (msg["ip"] == GameManager.Instance.IP)
         {
+            print(msg["msg"]);
             PlayerManager.Instance.ReceiveAnswer(msg["msg"]);
         }
         //BeeperChatMessage msg = JsonUtility.FromJson<BeeperChatMessage>(message);

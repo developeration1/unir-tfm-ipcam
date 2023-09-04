@@ -74,6 +74,7 @@ public class PlayerManager : Singleton<PlayerManager>
     private IEnumerator FastNoteRoutine(string note)
     {
         inCinematic = true;
+        hand.IsKey = false;
         hand.Info = note;
         _agent.DoAction(CharacterAction.Writing);
         while (_agent.IsActing)
