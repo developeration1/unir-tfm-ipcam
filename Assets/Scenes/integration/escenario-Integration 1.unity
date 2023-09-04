@@ -1641,10 +1641,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 665, y: -302.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &100204933
 MonoBehaviour:
@@ -4396,10 +4396,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 665, y: -102.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &221441037
 VideoPlayer:
@@ -6152,10 +6152,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 665, y: -502.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &313537039
 MonoBehaviour:
@@ -16968,10 +16968,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -102.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765586249
 MonoBehaviour:
@@ -22383,10 +22383,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -102.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &1080318903
 VideoPlayer:
@@ -29569,7 +29569,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1447674283
 MeshRenderer:
@@ -31949,10 +31949,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -502.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1602055368
 MonoBehaviour:
@@ -33123,10 +33123,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -302.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &1703819010
 VideoPlayer:
@@ -34746,10 +34746,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -302.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &1792007110
 VideoPlayer:
@@ -34986,7 +34986,7 @@ PrefabInstance:
     - target: {fileID: 3942706490330179017, guid: ec415f267986c6a42a427848c6fa3412,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4396641847139041453, guid: ec415f267986c6a42a427848c6fa3412,
         type: 3}
@@ -38893,10 +38893,10 @@ RectTransform:
   m_Father: {fileID: 1799822128}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -502.5}
+  m_SizeDelta: {x: 260, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &1950843140
 VideoPlayer:
@@ -40598,7 +40598,10 @@ MonoBehaviour:
   ip: 0.0.0.0
   passwords:
   - 1509
-  - 617
+  - HK617
+  - MCAU
+  - 12AI
+  - 979
   tagToPivotList:
   - tag: Sotano
     pivot: {fileID: 857548711}
@@ -40678,10 +40681,46 @@ MonoBehaviour:
       - m_Target: {fileID: 1563641166}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
         m_MethodName: TryUnlock
-        m_Mode: 2
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: Key, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 502467811}
+        m_TargetAssemblyTypeName: Door, Assembly-CSharp
+        m_MethodName: TryUnlock
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 728962198}
+        m_TargetAssemblyTypeName: Door, Assembly-CSharp
+        m_MethodName: TryUnlock
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 543393302}
+        m_TargetAssemblyTypeName: Door, Assembly-CSharp
+        m_MethodName: TryUnlock
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
