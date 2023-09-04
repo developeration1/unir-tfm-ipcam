@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   height: 0
   key: {fileID: 11400000, guid: 013e49f42c5e2764c98948400c32eb5e, type: 2}
-  password: 12ai
+  password: 12AI
   passwordHint: "codigo de 2 d\xEDgitos y 2 letras"
-  test: 

@@ -56,6 +56,7 @@ public class BeeperChatReceiver
                 IPEndPoint anyIP = new IPEndPoint(IPAddress.Any, 0);
                 byte[] data = client.Receive(ref anyIP);
                 message = Encoding.UTF8.GetString(data);
+                Debug.Log(message);
                 //OnReceiveFromBeeperChat.Invoke(text);
             }
             catch (Exception err)

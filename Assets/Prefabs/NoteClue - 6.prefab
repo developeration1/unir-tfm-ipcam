@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 258729748634102769}
   - component: {fileID: 1283806062107839569}
   m_Layer: 0
-  m_Name: NoteClue
+  m_Name: NoteClue - 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,11 +184,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Info blog
-
-    ila.lat
-
-    (1996-dic-17)'
+  m_text: "Busca en mi blog (mi primera experiencia...), ah\xED tendr\xE1s acceso
+    a \"ILA.LAT\"\n\nAl ingresar, busca algo con relaci\xF3n la embajada de Jap\xF3n
+    en Per\xFA y 14 Personas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 144967ce67c6a5140af9c6f9a8e93b4c, type: 2}
   m_sharedMaterial: {fileID: 5382004882441527596, guid: 144967ce67c6a5140af9c6f9a8e93b4c,
@@ -216,11 +214,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.1
+  m_fontSize: 0.7
   m_fontSizeBase: 4.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 1
+  m_fontSizeMin: 0.7
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
