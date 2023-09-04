@@ -1,10 +1,5 @@
-using JetBrains.Annotations;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Accessibility;
-using UnityEngine.AI;
-using UnityEngine.Events;
 
 [RequireComponent(typeof(Animator))]
 public class CharacterAnimationManager : MonoBehaviour

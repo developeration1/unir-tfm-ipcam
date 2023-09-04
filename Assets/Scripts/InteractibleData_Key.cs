@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
-using UnityEngine.InputSystem.UI;
 
 [CreateAssetMenu(fileName = "Interactible Key", menuName = "Interactibles/Key")]
 public class InteractibleData_Key : InteractibleData

@@ -1,12 +1,6 @@
-using CielaSpike;
-using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.AI;
 using Utils;
 
 public class PlayerManager : Singleton<PlayerManager>
