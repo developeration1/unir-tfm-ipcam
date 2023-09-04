@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 using Utils;
@@ -106,6 +107,47 @@ public class PlayerManager : Singleton<PlayerManager>
         hand.Showing = false;
         inCinematic = false;
 
+    }
+
+    public void EndingNote(string note, Transform finalPivot)
+    {
+        StartCoroutine(EndingNoteRoutine(note, finalPivot));
+    }
+
+    private IEnumerator EndingNoteRoutine(string note, Transform finalPivot)
+    {
+        inCinematic = true;
+        hand.IsKey = false;
+        hand.Info = note;
+        _agent.DoAction(CharacterAction.Writing);
+        while (_agent.IsActing)
+        {
+            yield return null;
+        }
+        yield return null;
+        _agent.MoveToPosition(cameraPivot.position);
+        yield return null;
+        while (_agent.IsMoving)
+        {
+            yield return null;
+        }
+        yield return null;
+        _agent.DoAction(cameraPivot.rotation, CharacterAction.Showing);
+        yield return null;
+        while (_agent.IsActing)
+        {
+            yield return null;
+        }
+        yield return null;
+        hand.Showing = true;
+        print("showing");
+        while (_agent.IsActing)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(7);
+        hand.Showing = false;
+        MoveToPosition(finalPivot.position);
     }
 
     public void ExecuteParameters()
