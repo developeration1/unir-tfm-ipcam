@@ -66,6 +66,47 @@ public class PlayerManager : Singleton<PlayerManager>
         playerParameter = interactible.Data.GiveParametersToPlayer(interactible);
     }
 
+    public void FastNote(string note)
+    {
+        StartCoroutine(FastNoteRoutine(note));
+    }
+
+    private IEnumerator FastNoteRoutine(string note)
+    {
+        inCinematic = true;
+        hand.Info = note;
+        _agent.DoAction(CharacterAction.Writing);
+        while (_agent.IsActing)
+        {
+            yield return null;
+        }
+        yield return null;
+        _agent.MoveToPosition(cameraPivot.position);
+        yield return null;
+        while (_agent.IsMoving)
+        {
+            yield return null;
+        }
+        yield return null;
+        _agent.DoAction(cameraPivot.rotation, CharacterAction.Showing);
+        yield return null;
+        while (_agent.IsActing)
+        {
+            yield return null;
+        }
+        yield return null;
+        hand.Showing = true;
+        print("showing");
+        while (_agent.IsActing)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(7);
+        hand.Showing = false;
+        inCinematic = false;
+
+    }
+
     public void ExecuteParameters()
     {
         StartCoroutine(ExecuteParametersRoutine());
