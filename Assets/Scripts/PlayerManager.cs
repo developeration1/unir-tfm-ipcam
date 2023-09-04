@@ -185,7 +185,7 @@ public class PlayerManager : Singleton<PlayerManager>
 
     public void ReceiveAnswer(string message)
     {
-        message.ToUpper();
+        message = message.ToUpper();
         StartCoroutine(ReadAnswerRoutine(message));
     }
 
