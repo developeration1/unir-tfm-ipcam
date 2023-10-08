@@ -24,6 +24,32 @@ public class PlayerManager : Singleton<PlayerManager>
     public List<Key> Keys => keys;
     public bool InCinematic => inCinematic;
 
+    public void StartCinematic(params string[] messages)
+    {
+        StartCoroutine(StartCinematicRoutine(messages));
+    }
+
+    private IEnumerator StartCinematicRoutine(params string[] messages)
+    {
+        inCinematic = true;
+        MoveToPosition(cameraPivot.position);
+        yield return null;
+        while (_agent.IsMoving)
+        {
+            yield return null;
+        }
+        foreach (string message in messages)
+        {
+            FastNote(message);
+            yield return null;
+            while (inCinematic)
+            {
+                yield return null;
+            }
+            yield return new WaitForSeconds(1.5f);
+        }
+    }
+
     public void SetPositionToHand(Transform pivot)
     {
         hand.transform.position = pivot.position;

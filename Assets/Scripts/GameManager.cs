@@ -10,6 +10,8 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private List<string> passwords;
     [SerializeField] private List<TagToPivot> tagToPivotList;
     [SerializeField] UnityEvent<Key> OnKeyGet;
+    [SerializeField] bool gameStarted;
+    [SerializeField] string[] startGameMessages;
 
     public string IP => ip;
 
@@ -51,6 +53,15 @@ public class GameManager : Singleton<GameManager>
                 return item.Hand;
         }
         return null;
+    }
+
+    public void StartGame()
+    {
+        if (!gameStarted)
+        {
+            gameStarted = true;
+            PlayerManager.Instance.StartCinematic(startGameMessages);
+        }
     }
 
     [Serializable]
