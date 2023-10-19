@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3666924751058145528}
   - component: {fileID: 7840689154277547771}
   m_Layer: 0
-  m_Name: Clue 6
+  m_Name: Pista blog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,8 +111,8 @@ RectTransform:
   m_GameObject: {fileID: 2900645448849488209}
   m_LocalRotation: {x: -0.00000014106497, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 166323441225566673}
   m_RootOrder: -1
@@ -184,8 +184,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "en mi blog \"mi primera experiencia...\", ==>  ILA.LAT\n\nAlgo sobre la
-    \"Embajada de Jap\xF3n en Per\xFA y 14 rehenes\"."
+  m_text: 'a  i  m  o  t
+
+    u  o  a  g  .
+
+    r  p  .  s  c
+
+    e  a  b  p  o
+
+    l 
+    l  l  o  m'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 144967ce67c6a5140af9c6f9a8e93b4c, type: 2}
   m_sharedMaterial: {fileID: 5382004882441527596, guid: 144967ce67c6a5140af9c6f9a8e93b4c,
@@ -219,7 +227,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 0.7
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
